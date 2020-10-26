@@ -16,18 +16,20 @@ print("===========")
 // INPUT
 
 // Get the number to be shifted
+print("Number to be shifted?")
 let n = Int(readLine()!)!
 
 // How many times should we shift?
-let k = 3
+print("How many times should we shift?")
+let k = Int(readLine()!)!
 
 // PROCESS
 
 // Shift the given number "k" number of times
 var output = n
-output += n * 10
-output += n * 10 * 10
-output += n * 10 * 10 * 10
+for _ in 1 ... k {
+    output = output * 10 + n
+}
 
 // OUTPUT
 print(output)
