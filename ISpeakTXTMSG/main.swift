@@ -18,12 +18,11 @@ print("==============")
 // Ask for a phrase
 print("Enter phrase> ", terminator: "")
 let phrase = readLine()!
-
-// PROCESS AND OUTPUT
-// NOTE: Instead of an "if statement" consider using a different type of Swift structure to handle all the different possible cases...
-if phrase == "TA" {
-    print("totally awesome")
-} else if phrase == "TTYL" {
-    print("talk to you later")
-    exit(0)
+var lis = ["CU", "see you", ":-)", "I’m happy", ":-(", "I’m unhappy", ";-)", "wink", ":-P", "stick out my tongue", "(˜.˜)", "sleepy", "TA", "totally awesome", "CCC", "Canadian Computing Competition", "CUZ", "because", "TY", "thank-you", "YW", "you’re welcome", "TTYL", "talk to you later"]
+for i in 0 ... 11 {
+    if(phrase == lis[2 * i]) {
+        print(lis[2 * i + 1])
+        exit(0)
+    }
 }
+print(phrase)
