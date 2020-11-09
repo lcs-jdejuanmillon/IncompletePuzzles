@@ -44,4 +44,4 @@ let sid = [100, 57, 70, 0]
 let des = [167, 266, 75, 0]
 // OUTPUT
 // Show the calories total for the choices made by the user.
-print("Your total Calorie count is \(bur[burger] + dri[drink] + sid[side] + des[dessert]).")
+print("Your total Calorie count is \(bur[burger - 1] + dri[drink - 1] + sid[side - 1] + des[dessert - 1]).")
