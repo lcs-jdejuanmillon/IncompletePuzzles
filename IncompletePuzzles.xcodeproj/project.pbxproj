@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0DA3391A2559E9870053C717 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA3390E2559E9200053C717 /* Extensions.swift */; };
 		0E41A570252F32CE00F2CECF /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E41A56F252F32CE00F2CECF /* main.swift */; };
 		0E41A581252F343100F2CECF /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E41A580252F343100F2CECF /* main.swift */; };
 		0E41A5B02537209E00F2CECF /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E41A5AF2537209E00F2CECF /* main.swift */; };
@@ -113,6 +114,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0DA3390E2559E9200053C717 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		0E41A56D252F32CE00F2CECF /* SpeedingIsNotFine */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SpeedingIsNotFine; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E41A56F252F32CE00F2CECF /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		0E41A57E252F343100F2CECF /* ISBN */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ISBN; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -276,6 +278,7 @@
 		0EE0D943252563B00090B2E0 = {
 			isa = PBXGroup;
 			children = (
+				0DA3390E2559E9200053C717 /* Extensions.swift */,
 				0EE0D95D252563ED0090B2E0 /* Trident */,
 				0EE0D96A252564CB0090B2E0 /* TheCellSell */,
 				0E7364BF2528B54400F3914E /* RSANumbers */,
@@ -617,6 +620,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0DA3391A2559E9870053C717 /* Extensions.swift in Sources */,
 				0EB21DB925449AB60021BC96 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
