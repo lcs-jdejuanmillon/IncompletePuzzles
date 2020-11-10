@@ -17,7 +17,11 @@ print("=============")
 
 // Create an empty array to store each row of numbers
 // NOTE: Each row will itself be an array, effectively creating a two-dimensional array.
+var example = Array(repeating: Array(repeating: 0, count: 10), count: 10)
+
 var numbers: [[String]] = []
+
+
 
 // Ask for the first row of numbers
 // NOTE: This is provided as a String
@@ -30,11 +34,11 @@ numbers.append(line1.components(separatedBy: " "))
 // Ask for the second row of numbers
 // NOTE: This is provided as a string
 let line2 = readLine()!
-
-// Now split the first row of numbers using the space character as a delimiter, and then place the resulting array in the 2D array of numbers
-// NOTE: Set a breakpoint and use the debugger to see what the "numbers" array contains at this point
 numbers.append(line2.components(separatedBy: " "))
-
+let line3 = readLine()!
+numbers.append(line3.components(separatedBy: " "))
+let line4 = readLine()!
+numbers.append(line4.components(separatedBy: " "))
 // PROCESS & OUTPUT
 
 // Print each row and column of the array
@@ -76,3 +80,17 @@ for row in 0...numbers.count - 1 {
     print("")
     
 }
+var sum = Int(numbers[0][0])! + Int(numbers[0][1])! + Int(numbers[0][2])! + Int(numbers[0][3])!
+for i in 1 ... 3 {
+    if Int(numbers[i][0])! + Int(numbers[i][1])! + Int(numbers[i][2])! + Int(numbers[i][3])! != sum {
+        print("not magic")
+        exit(0)
+    }
+}
+for j in 0 ... 3 {
+    if Int(numbers[0][j])! + Int(numbers[1][j])! + Int(numbers[2][j])! + Int(numbers[3][j])! != sum {
+        print("not magic")
+        exit(0)
+    }
+}
+print("magic")
